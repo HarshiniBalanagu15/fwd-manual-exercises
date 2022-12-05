@@ -1,0 +1,80 @@
+<!-- 21b01a1215 -->
+<!-- --Experiment : 5-- -->
+<!-- Demonstrate how pseudo classes can be used to create an effective webpage -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+
+        a:hover {
+            color: hotpink;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        img:hover {
+            border: 10px solid red;
+        }
+
+        h2:first-child {
+
+            color: blue;
+        }
+
+        input:focus {
+            border: 3px solid lightblue;
+            color: blue;
+            width: 300px;
+        }
+        a.highlight:hover {
+        color: #ff0000;
+        font-size: 22px;
+       }
+       div {
+        background-color: green;
+        color: white;
+        padding: 25px;
+         text-align: center;
+       }
+
+       div:hover {
+        background-color: blue;
+      } 
+    </style>
+</head>
+
+<body>
+
+    <h2>Pseudo classes</h2>
+
+    <p><b><a href="succes.html">This is a link</a></b></p>
+    
+    <img height = "350px"; width = "450px"src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg">
+   
+        <p><a class="highlight" href="tree-image.asp">CSS Syntax</a></p>
+        
+    
+    <div>Mouse Over Me</div>
+    <form>
+        <h1>Name: <input type="text" value="Enter your name"></h1>
+    </form>
+
+</body>
+
+</html>

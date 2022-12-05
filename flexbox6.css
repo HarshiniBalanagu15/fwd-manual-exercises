@@ -1,0 +1,20 @@
+.container{
+    display:flex;/*arrange in row by default*/
+    flex-direction:row;/* arrange the boxes in row, colum etc*/
+    flex-wrap: wrap;/*if we mention nowrap all the boxes will arrange in a row my adjusting*/
+    flex-flow: row wrap;
+    justify-content:space-evenly;/* we can arrange the boxes with spaces styles as our wish*/
+    align-items: center;/*al boxes willa align at center of the page*/
+    width: 400px;
+    height: 250px;
+    background-color:black;
+    border:2px solid red;
+
+}
+.item{
+    width: 25px;
+    height: 25px;
+    background-color: blue;
+    border:2px solid yellow;
+    margin: 2px;
+}

@@ -1,0 +1,66 @@
+<!-- 21b01a1215 -->
+<!-- Experiment-10 -->
+<!-- 11.Write JavaScript to validate the following fields of the above registration page.
+a. Name (Name should contain alphabets and the length should not be less
+than 6 characters).
+b. Password (Password should not be less than 6 characters’ length).
+c. E-mail id (should not contain any invalid and must follow the standard
+pattern name@domain.com)
+d. Phone number (Phone number should contain 10 digits only). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        function validated1(){
+            let name = document.getElementById("t1").value;
+            let pname = document.getElementById("p1").value;
+            let email = document.getElementById("e1").value;
+            let phno = document.getElementById("ph1").value;
+            if(name == "" || name.length < 6){
+                alert("Name should contain alphabets and length should not less than 6 characters");
+                return false;
+            }
+            if(pname == "" || pname.length < 6){
+                alert("Password should not be less than 6 characters");
+                return false;
+            }
+            if(email == ""){
+                alert("Shouldn't contain any invalid and must follow standard pattern");
+                return false;
+            }
+            if(phno == "" || phno.length != 10){
+                alert("Phone number should contain 10 digits only");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body style = "background-color: lightgrey;">
+    
+    <form action="regdes.html" onsubmit = "return validated1();">
+       <label for="">Name:</label><input type="text"style=" height:30px; width : 300px;" id = "t1"><span style="color:black">
+    (Name should contain alphabets and length should not less than 6 characters)</span><br><br>
+        <label for="">Password</label><input type="password" style=" height:30px; width : 300px;" id = "p1"><span style="color:black" >
+        Password should not be less than 6 characters</span><br><br>
+        <label for="">E-mail id</label><input type="email" style=" height:30px; width : 300px;" id = "e1"><span style = "color:black">
+        (Shouldn't contain any invalid and must follow standard pattern)</span><br><br>
+        <label for="">Phone number</label><input type="number"  style=" height:30px; width : 300px;" id = "ph1"><span style = "color:black">
+        (Phone number should contain 10 digits only)</span><br><br>
+     
+        Gender: <label for="">Male</label><input type="radio"title= "female" name = "radio1">
+        <label for="">Female</label><input type="radio"title= "male" name = "radio1"><br><br>
+        Languages <br> <input type="checkbox"><label for="">English</label>
+        <input type="checkbox"><label for="">Telugu</label>
+        <input type="checkbox"><label for="">Hindi</label><br><br>
+        <input type="checkbox"><label for="">Tamil</label><br><br>
+        Adress:<input type="text" style = "height: 200px;width: 200px;"><br><br>
+        <button class = "btn"><label for="">submit</label></button>
+    </form>
+
+</body>
+</html>
